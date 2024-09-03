@@ -29,7 +29,7 @@ class BienvenidaScreen extends StatelessWidget {
                 Navigator.pushNamed(context, '/cajero');
               },
               style: ElevatedButton.styleFrom(
-                primary: Colors
+                backgroundColor: Colors
                     .teal, // Cambia el color de fondo según tus preferencias
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(
