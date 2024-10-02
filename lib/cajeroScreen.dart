@@ -89,11 +89,11 @@ class _CajeroScreenState extends State<CajeroScreen> {
             Text(
               'Cuánto dinero desea retirar:',
               style: TextStyle(
-                fontSize: 20.0, // Tamaño de fuente del título
-                fontWeight: FontWeight.bold, // Texto en negrilla
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 10), // Espacio entre el título y el ListView
+            SizedBox(height: 10),
             Expanded(
               child: ListView.builder(
                 itemCount:
@@ -110,14 +110,13 @@ class _CajeroScreenState extends State<CajeroScreen> {
                           5.0), // Agrega espacio adicional de 5 unidades
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.black, // Color del borde negro
-                          width: 1.0, // Grosor del borde
+                          color: Colors.black,
+                          width: 1.0,
                         ),
                         borderRadius: BorderRadius.all(
                           Radius.circular(
-                              5.0), // Borde redondeado con radio de 5 unidades
-                        ),
-                        color: Colors.white, // Color de fondo blanco del cuadro
+                              5.0),
+                        color: Colors.white,
                       ),
                       child: ListTile(
                         title: Text(
@@ -125,15 +124,15 @@ class _CajeroScreenState extends State<CajeroScreen> {
                           style: TextStyle(
                             fontSize: 18,
                             color: Colors
-                                .black, // Cambia el color del texto a negro
+                                .black,
                           ),
                         ),
                         tileColor:
-                            Colors.white, // Cambia el color de fondo a blanco
+                            Colors.white,
                         trailing: Icon(
                           Icons.arrow_forward,
                           color: Colors
-                              .black, // Cambia el color del icono de flecha a negro
+                              .black,
                         ),
                       ),
                     ),
@@ -144,33 +143,33 @@ class _CajeroScreenState extends State<CajeroScreen> {
             SizedBox(height: 20),
             Container(
               margin:
-                  EdgeInsets.all(5.0), // Agrega espacio adicional de 5 unidades
+                  EdgeInsets.all(5.0),
               decoration: BoxDecoration(
                 border: Border.all(
-                  color: Colors.black, // Color del borde negro
-                  width: 1.0, // Grosor del borde
+                  color: Colors.black,
+                  width: 1.0,
                 ),
                 borderRadius: BorderRadius.all(
                   Radius.circular(
-                      5.0), // Borde redondeado con radio de 5 unidades
+                      5.0),
                 ),
               ),
-              width: 400.0, // Ancho personalizado
-              height: 60.0, // Alto personalizado
+              width: 400.0,
+              height: 60.0,
               child: TextField(
                 controller: dineroController,
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   border: InputBorder
-                      .none, // Elimina el borde predeterminado del TextField
+                      .none,
                   hintText: 'Ingrese otro valor diferente',
                   contentPadding:
-                      EdgeInsets.all(15.0), // Espacio interno del TextField
+                      EdgeInsets.all(15.0),
                 ),
                 textAlign: TextAlign
-                    .justify, // Alinea el texto verticalmente al centro
+                    .justify,
                 style: TextStyle(
-                  fontSize: 18.0, // Tamaño de fuente personalizado
+                  fontSize: 18.0,
                 ),
               ),
             ),
@@ -187,11 +186,11 @@ class _CajeroScreenState extends State<CajeroScreen> {
                         builder: (BuildContext context) {
                           return AlertDialog(
                             backgroundColor: Colors
-                                .white, // Cambia el color de fondo del cuadro de diálogo
+                                .white,
                             title: Text('Retiro Exitoso',
                                 style: TextStyle(
                                     color: Colors
-                                        .teal)), // Cambia el color del título
+                                        .teal)),
                             content: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -213,13 +212,13 @@ class _CajeroScreenState extends State<CajeroScreen> {
                               TextButton(
                                 onPressed: () {
                                   Navigator.of(context)
-                                      .pop(); // Cierra el cuadro de diálogo
+                                      .pop();
                                 },
                                 child: Text(
                                   'Aceptar',
                                   style: TextStyle(
                                       color: Colors
-                                          .teal), // Cambia el color del texto del botón
+                                          .teal),
                                 ),
                               ),
                             ],
@@ -232,12 +231,12 @@ class _CajeroScreenState extends State<CajeroScreen> {
                         builder: (BuildContext context) {
                           return AlertDialog(
                             backgroundColor: Colors
-                                .white, // Cambia el color de fondo del cuadro de diálogo
+                                .white,
                             title: Text(
                               'Retiro Fallido.',
                               style: TextStyle(
                                 color: Colors
-                                    .red, // Cambia el color del título a rojo
+                                    .red,
                               ),
                             ),
                             content: Text(
@@ -246,13 +245,13 @@ class _CajeroScreenState extends State<CajeroScreen> {
                               TextButton(
                                 onPressed: () {
                                   Navigator.of(context)
-                                      .pop(); // Cierra el cuadro de diálogo
+                                      .pop();
                                 },
                                 child: Text(
                                   'Aceptar',
                                   style: TextStyle(
                                     color: Colors
-                                        .red, // Cambia el color del texto del botón a rojo
+                                        .red,
                                   ),
                                 ),
                               ),
@@ -266,7 +265,7 @@ class _CajeroScreenState extends State<CajeroScreen> {
                   label: Text('Realizar Retiro'),
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(
-                        Colors.teal), // Cambia el color de fondo
+                        Colors.teal),
                   ),
                 ),
                 SizedBox(width: 20),
@@ -281,7 +280,7 @@ class _CajeroScreenState extends State<CajeroScreen> {
                   label: Text('Limpiar'),
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(
-                        Colors.red), // Cambia el color de fondo
+                        Colors.red),
                   ),
                 ),
               ],
