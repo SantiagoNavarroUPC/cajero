@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       initialRoute:
-          '/bienvenida', // Ruta inicial, puedes ajustarla según tus necesidades
+          '/bienvenida',
       routes: {
         '/bienvenida': (context) =>
-            BienvenidaScreen(), // Ruta de BienvenidaScreen
+            BienvenidaScreen(),
         '/cajero': (context) => CajeroScreen(), // Ruta de CajeroScreen
       },
     );
