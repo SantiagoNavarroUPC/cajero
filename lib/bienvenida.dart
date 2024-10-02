@@ -13,9 +13,9 @@ class BienvenidaScreen extends StatelessWidget {
             Text(
               '¡Bienvenido!',
               style: TextStyle(
-                fontSize: 50.0, // Tamaño de fuente grande
+                fontSize: 50.0,
                 fontWeight: FontWeight.bold,
-                color: Color.fromARGB(255, 211, 39, 27), // Color de texto
+                color: Color.fromARGB(255, 211, 39, 27),
               ),
             ),
             SizedBox(height: 40.0),
@@ -30,7 +30,7 @@ class BienvenidaScreen extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors
-                    .teal, // Cambia el color de fondo según tus preferencias
+                    .teal,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(
                       30.0),
